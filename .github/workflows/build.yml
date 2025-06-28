@@ -1,22 +1,53 @@
-name: Build
+name: Flutter CI with SonarQube
+
 on:
   push:
     branches:
       - development
   pull_request:
     types: [opened, synchronize, reopened]
+
 jobs:
   sonarqube:
-    name: SonarQube
+    name: SonarQube Analysis
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
-      - name: Build
-        run: <commands_to_build_your_project>
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Required for SonarQube to analyze Git history
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.29.2'
+
+      - name: Install Dependencies
+        run: flutter pub get
+
+      - name: Analyze Dart Code (Optional)
+        run: flutter analyze
+        continue-on-error: true # Prevent workflow failure if analysis finds issues
+
+      - name: Debug SonarQube Configuration
+        run: |
+          echo "SONAR_HOST_URL: $SONAR_HOST_URL"
+          ls -la sonar-project.properties || echo "No sonar-project.properties found"
+        env:
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+
       - name: SonarQube Scan
         uses: SonarSource/sonarqube-scan-action@v5
+        with:
+          projectBaseDir: .
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+
+      - name: Quality Gate Check
+        uses: SonarSource/sonarqube-quality-gate-action@v1.1.0
+        timeout-minutes: 5
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        continue-on-error: true # Prevents workflow failure if Quality Gate fails
