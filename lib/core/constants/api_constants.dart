@@ -14,9 +14,7 @@ abstract class ApiConstants {
   static const String addProductToWishlist = "/api/v1/wishlist";
   static const String removeProductFromWishList = "/api/v1/wishlist/{id}";
   static const String getWishList = "/api/v1/wishlist";
-  static const String addProductToCart = "/api/v1/cart";
+  static const String cart = "/api/v1/cart";
   static const String updateCartProductQuantity = "/api/v1/cart/{id}";
-  static const String getUserCart = "/api/v1/cart";
   static const String removeProductFromCart = "/api/v1/cart/{id}";
-  static const String clearUserCart = "/api/v1/cart";
 }

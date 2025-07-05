@@ -14,6 +14,7 @@ dependencies:
   flutter_native_splash:
   icons_launcher:
   flutter_bloc:
+  icons_plus:
   flutter_localizations:
     sdk: flutter
   intl: any
