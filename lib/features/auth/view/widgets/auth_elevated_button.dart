@@ -11,7 +11,11 @@ class AuthElevatedButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
       onPressed: onPressed,
-      style: ElevatedButton.styleFrom(backgroundColor: AppColors.white),
+      style: ElevatedButton.styleFrom(
+        backgroundColor: AppColors.white,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+        padding: const EdgeInsets.symmetric(vertical: 20),
+      ),
       child: Text(
         title,
         style: Theme.of(

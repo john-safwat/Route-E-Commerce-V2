@@ -14,7 +14,7 @@ class AppTheme {
           fontWeight: FontWeight.w400,
           color: colorScheme.secondary,
         ),
-        bodyMedium:GoogleFonts.poppins(
+        bodyMedium: GoogleFonts.poppins(
           fontSize: 16,
           color: colorScheme.onPrimary,
         ),
@@ -48,7 +48,7 @@ class AppTheme {
           fontSize: 18,
 
           color: colorScheme.onPrimary,
-        )
+        ),
       ),
 
       textSelectionTheme: TextSelectionThemeData(
@@ -117,7 +117,6 @@ class AppTheme {
         surface: AppColors.white,
         onSurface: AppColors.blue,
       ),
-
     );
   }
 }

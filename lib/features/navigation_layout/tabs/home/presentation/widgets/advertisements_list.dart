@@ -1,6 +1,8 @@
 import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:route_e_commerce_v2/core/l10n/translations/app_localizations.dart';
+
 import '../model/advertisement_model.dart';
 import 'advertisement_card_widget.dart';
 

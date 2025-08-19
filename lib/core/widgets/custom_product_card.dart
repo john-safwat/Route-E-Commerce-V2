@@ -6,6 +6,7 @@ import 'package:route_e_commerce_v2/features/products/domain/entity/product.dart
 
 class CustomProductCard extends StatelessWidget {
   final Product product;
+
   const CustomProductCard({super.key, required this.product});
 
   @override

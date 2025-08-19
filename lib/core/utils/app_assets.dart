@@ -4,7 +4,6 @@ abstract class AppImages {
   static const String advertisement2 = '${_basePath}advertisement_2.png';
   static const String advertisement3 = '${_basePath}advertisement_3.png';
   static const String logo = 'assets/images/route_login_logo.png';
-
 }
 
 abstract class AppSvgs {
@@ -17,5 +16,4 @@ abstract class AppSvgs {
       '${_basePath}active_favorite_icon.svg';
   static const String inactiveFavoriteIcon =
       '${_basePath}inactive_favorite_icon.svg';
-
 }

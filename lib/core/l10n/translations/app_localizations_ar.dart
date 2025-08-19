@@ -1,5 +1,6 @@
 // ignore: unused_import
 import 'package:intl/intl.dart' as intl;
+
 import 'app_localizations.dart';
 
 // ignore_for_file: type=lint
@@ -9,44 +10,88 @@ class AppLocalizationsAr extends AppLocalizations {
   AppLocalizationsAr([String locale = 'ar']) : super(locale);
 
   @override
-  String get appName => 'رووت';
+  String get appName => 'راوت';
 
   @override
-  String get welcomeBackToRoute => 'اهلا بكم في رووت';
+  String get welcomeBackToRoute => 'مرحبًا بعودتك إلى راوت';
 
   @override
   String get pleaseSignInWithYourMail =>
-      'يرجى تسجيل الدخول باستخدام بريدك الالكتروني';
+      'يرجى تسجيل الدخول باستخدام بريدك الإلكتروني';
 
   @override
-  String get mail => 'البريد الالكتروني';
+  String get userName => 'اسم المستخدم';
 
   @override
   String get password => 'كلمة المرور';
 
   @override
-  String get signIn => 'تسجيل الدخول';
+  String get fullName => 'الاسم الكامل';
 
   @override
-  String get dontHaveAnAccount => 'لا يوجد لديك حساب';
+  String get enterYourFullName => 'أدخل اسمك الكامل';
 
   @override
-  String get createAccount => 'انشاء حساب';
+  String get mobileNumber => 'رقم الهاتف';
+
+  @override
+  String get enterYourMobileNumber => 'أدخل رقم هاتفك';
+
+  @override
+  String get email => 'البريد الإلكتروني';
+
+  @override
+  String get enterYourEmail => 'أدخل بريدك الإلكتروني';
+
+  @override
+  String get signUp => 'إنشاء حساب';
+
+  @override
+  String get login => 'تسجيل الدخول';
+
+  @override
+  String get dontHaveAnAccount => 'ليس لديك حساب؟';
+
+  @override
+  String get createAccount => 'إنشاء حساب';
 
   @override
   String get forgetPassword => 'نسيت كلمة المرور';
 
   @override
-  String get enterYourMail => 'ادخل بريدك الالكتروني';
+  String get enterYourName => 'أدخل اسمك';
 
   @override
-  String get enterYourPassword => 'ادخل كلمة المرور';
+  String get emailRequired => 'البريد الإلكتروني مطلوب';
 
   @override
-  String get searchHintText => 'ماذا تبحث عنه؟';
+  String get emailInvalid => 'يرجى إدخال بريد إلكتروني صالح';
 
   @override
-  String get categories => 'الفئات';
+  String get passwordRequired => 'كلمة المرور مطلوبة';
+
+  @override
+  String get passwordTooShort => 'يجب أن تتكون كلمة المرور من 6 أحرف على الأقل';
+
+  @override
+  String get passwordUppercase =>
+      'يجب أن تحتوي كلمة المرور على حرف كبير واحد على الأقل';
+
+  @override
+  String get passwordNumber =>
+      'يجب أن تحتوي كلمة المرور على رقم واحد على الأقل';
+
+  @override
+  String get fieldRequired => 'هذا الحقل مطلوب';
+
+  @override
+  String get enterYourPassword => 'أدخل كلمة المرور';
+
+  @override
+  String get searchHintText => 'ماذا تبحث عن؟';
+
+  @override
+  String get categories => 'التصنيفات';
 
   @override
   String get viewAll => 'عرض الكل';
@@ -70,11 +115,11 @@ class AppLocalizationsAr extends AppLocalizations {
   String get thirdOff => 'خصم 30%';
 
   @override
-  String get advertisement1 => 'لكل سماعات الرأس\nو AirPods';
+  String get advertisement1 => 'على جميع السماعات\nو أجهزة AirPods';
 
   @override
-  String get advertisement2 => 'لكل مستحضرات التجميل\nوالعناية بالبشرة';
+  String get advertisement2 => 'على جميع مستحضرات التجميل\nو العناية بالبشرة';
 
   @override
-  String get advertisement3 => 'للحواسيب المحمولة\nوالهواتف المحمولة';
+  String get advertisement3 => 'على أجهزة اللابتوب\nو الهواتف';
 }

@@ -107,7 +107,7 @@ abstract class AppLocalizations {
   /// No description provided for @welcomeBackToRoute.
   ///
   /// In en, this message translates to:
-  /// **'Welcome back to Route'**
+  /// **'Welcome Back To Route'**
   String get welcomeBackToRoute;
 
   /// No description provided for @pleaseSignInWithYourMail.
@@ -116,11 +116,11 @@ abstract class AppLocalizations {
   /// **'Please sign in with your mail'**
   String get pleaseSignInWithYourMail;
 
-  /// No description provided for @mail.
+  /// No description provided for @userName.
   ///
   /// In en, this message translates to:
-  /// **'Mail'**
-  String get mail;
+  /// **'User Name'**
+  String get userName;
 
   /// No description provided for @password.
   ///
@@ -128,11 +128,53 @@ abstract class AppLocalizations {
   /// **'Password'**
   String get password;
 
-  /// No description provided for @signIn.
+  /// No description provided for @fullName.
   ///
   /// In en, this message translates to:
-  /// **'Sign in'**
-  String get signIn;
+  /// **'Full Name'**
+  String get fullName;
+
+  /// No description provided for @enterYourFullName.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your full name'**
+  String get enterYourFullName;
+
+  /// No description provided for @mobileNumber.
+  ///
+  /// In en, this message translates to:
+  /// **'Mobile Number'**
+  String get mobileNumber;
+
+  /// No description provided for @enterYourMobileNumber.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your mobile number'**
+  String get enterYourMobileNumber;
+
+  /// No description provided for @email.
+  ///
+  /// In en, this message translates to:
+  /// **'E-mail address'**
+  String get email;
+
+  /// No description provided for @enterYourEmail.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your e-mail address'**
+  String get enterYourEmail;
+
+  /// No description provided for @signUp.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign Up'**
+  String get signUp;
+
+  /// No description provided for @login.
+  ///
+  /// In en, this message translates to:
+  /// **'Login'**
+  String get login;
 
   /// No description provided for @dontHaveAnAccount.
   ///
@@ -143,7 +185,7 @@ abstract class AppLocalizations {
   /// No description provided for @createAccount.
   ///
   /// In en, this message translates to:
-  /// **'Create account'**
+  /// **'Create Account'**
   String get createAccount;
 
   /// No description provided for @forgetPassword.
@@ -152,11 +194,53 @@ abstract class AppLocalizations {
   /// **'Forget password'**
   String get forgetPassword;
 
-  /// No description provided for @enterYourMail.
+  /// No description provided for @enterYourName.
   ///
   /// In en, this message translates to:
-  /// **'Enter your mail'**
-  String get enterYourMail;
+  /// **'Enter your name'**
+  String get enterYourName;
+
+  /// No description provided for @emailRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Email is required'**
+  String get emailRequired;
+
+  /// No description provided for @emailInvalid.
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a valid email address'**
+  String get emailInvalid;
+
+  /// No description provided for @passwordRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Password is required'**
+  String get passwordRequired;
+
+  /// No description provided for @passwordTooShort.
+  ///
+  /// In en, this message translates to:
+  /// **'Password must be at least 6 characters long'**
+  String get passwordTooShort;
+
+  /// No description provided for @passwordUppercase.
+  ///
+  /// In en, this message translates to:
+  /// **'Password must contain at least one uppercase letter'**
+  String get passwordUppercase;
+
+  /// No description provided for @passwordNumber.
+  ///
+  /// In en, this message translates to:
+  /// **'Password must contain at least one number'**
+  String get passwordNumber;
+
+  /// No description provided for @fieldRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'This field is required'**
+  String get fieldRequired;
 
   /// No description provided for @enterYourPassword.
   ///
