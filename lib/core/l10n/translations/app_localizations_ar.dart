@@ -64,4 +64,19 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get color => 'لون';
+
+  @override
+  String get productDetails => 'تفاصيل المنتج';
+
+  @override
+  String get description => 'الوصف';
+
+  @override
+  String get readLess => 'اقرأ أقل';
+
+  @override
+  String get readMore => 'اقرأ أكثر';
+
+  @override
+  String get size => 'حجم';
 }

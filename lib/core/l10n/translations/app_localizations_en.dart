@@ -64,4 +64,19 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get color => 'color';
+
+  @override
+  String get productDetails => 'Product Details';
+
+  @override
+  String get description => 'Description';
+
+  @override
+  String get readLess => 'Read Less';
+
+  @override
+  String get readMore => 'Read More';
+
+  @override
+  String get size => 'Size';
 }

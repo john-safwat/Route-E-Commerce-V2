@@ -17,5 +17,10 @@
   "checkout": "الدفع",
   "addToCart": "اضف الي السلة",
   "egp": "جنيه",
-  "color": "لون"
+  "color": "لون",
+  "productDetails": "تفاصيل المنتج",
+  "description": "الوصف",
+  "readLess": "اقرأ أقل",
+  "readMore": "اقرأ أكثر",
+  "size": "حجم"
 }
