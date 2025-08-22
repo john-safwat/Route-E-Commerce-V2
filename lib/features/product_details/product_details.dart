@@ -83,7 +83,7 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
                     clipBehavior: Clip.antiAlias,
                     decoration: BoxDecoration(
                       border: Border.all(
-                        color: AppColors.blue.withOpacity(.3),
+                        color: AppColors.blue.withValues(alpha: .3),
                         width: 1,
                       ),
                       borderRadius: BorderRadius.circular(20),
@@ -148,13 +148,12 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
                 colorClickableText: AppColors.blue,
               ),
               const SizedBox(height: 16),
-              SizeSelector(
-                sizes: sizes,
-                selectedSize: selectedSize,              ),
+              SizeSelector(sizes: sizes, selectedSize: selectedSize),
               const SizedBox(height: 24),
               ColorSelector(
                 availableColors: product.availableColors!,
-                selectedColor: selectedColor,              ),
+                selectedColor: selectedColor,
+              ),
               const SizedBox(height: 48),
               _addToCart(localizations, product, context),
             ],
