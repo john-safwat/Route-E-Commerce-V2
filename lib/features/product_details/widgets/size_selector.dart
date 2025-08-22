@@ -38,7 +38,7 @@ class SizeSelector extends StatelessWidget {
                     return CircleAvatar(
                       radius: 22,
                       backgroundColor:
-                          index == selectedSize
+                          index == value
                               ? AppColors.blue
                               : Colors.transparent,
                       child: Padding(
@@ -53,7 +53,7 @@ class SizeSelector extends StatelessWidget {
                               .bodyMedium
                               ?.copyWith(
                                 color:
-                                    index == selectedSize
+                                    index == value
                                         ? AppColors.white
                                         : AppColors.blue,
                               ),

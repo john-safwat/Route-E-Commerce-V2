@@ -45,7 +45,7 @@ class ColorSelector extends StatelessWidget {
                         return Icon(
                           Icons.check,
                           color:
-                              index == selectedColor.value
+                              index == value
                                   ? AppColors.white
                                   : Colors.transparent,
                         );
