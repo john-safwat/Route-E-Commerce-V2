@@ -5,14 +5,12 @@ import 'package:route_e_commerce_v2/core/theme/app_theme.dart';
 
 class ColorSelector extends StatelessWidget {
   final List<String> availableColors;
-  final int selectedColor;
-  final Function(int) onColorSelected;
+  final ValueNotifier<int> selectedColor;
 
   const ColorSelector({
     super.key,
     required this.availableColors,
     required this.selectedColor,
-    required this.onColorSelected,
   });
 
   @override
@@ -33,7 +31,7 @@ class ColorSelector extends StatelessWidget {
             scrollDirection: Axis.horizontal,
             itemBuilder: (context, index) {
               return GestureDetector(
-                onTap: () => onColorSelected(index),
+                onTap: () => selectedColor.value = index,
                 child: CircleAvatar(
                   radius: 20,
                   backgroundColor: AppColors.nameToColor(
@@ -41,12 +39,17 @@ class ColorSelector extends StatelessWidget {
                   ),
                   child: Align(
                     alignment: Alignment.center,
-                    child: Icon(
-                      Icons.check,
-                      color:
-                          index == selectedColor
-                              ? AppColors.white
-                              : Colors.transparent,
+                    child: ValueListenableBuilder(
+                      valueListenable: selectedColor,
+                      builder: (context, value, child) {
+                        return Icon(
+                          Icons.check,
+                          color:
+                              index == selectedColor.value
+                                  ? AppColors.white
+                                  : Colors.transparent,
+                        );
+                      },
                     ),
                   ),
                 ),

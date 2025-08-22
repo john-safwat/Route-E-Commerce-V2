@@ -19,8 +19,8 @@ class ProductDetailsScreen extends StatefulWidget {
 
 class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
   final ValueNotifier<int> productCounter = ValueNotifier<int>(0);
-  int selectedColor = 0;
-  int selectedSize = 0;
+  final ValueNotifier<int> selectedColor = ValueNotifier<int>(0);
+  final ValueNotifier<int> selectedSize = ValueNotifier<int>(0);
 
   List<int> sizes = [35, 38, 39, 40];
 
@@ -150,23 +150,11 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
               const SizedBox(height: 16),
               SizeSelector(
                 sizes: sizes,
-                selectedSize: selectedSize,
-                onSizeSelected: (index) {
-                  setState(() {
-                    selectedSize = index;
-                  });
-                },
-              ),
+                selectedSize: selectedSize,              ),
               const SizedBox(height: 24),
               ColorSelector(
                 availableColors: product.availableColors!,
-                selectedColor: selectedColor,
-                onColorSelected: (index) {
-                  setState(() {
-                    selectedColor = index;
-                  });
-                },
-              ),
+                selectedColor: selectedColor,              ),
               const SizedBox(height: 48),
               _addToCart(localizations, product, context),
             ],
