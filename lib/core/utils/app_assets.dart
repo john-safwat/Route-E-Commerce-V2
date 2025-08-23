@@ -15,4 +15,9 @@ abstract class AppSvgs {
       '${_basePath}active_favorite_icon.svg';
   static const String inactiveFavoriteIcon =
       '${_basePath}inactive_favorite_icon.svg';
+  static const String arrowForward = '${_basePath}arrow_forward.svg';
+
+  static const String starIcon = '${_basePath}star_icon.svg';
+
+  static const String addCartIcon = '${_basePath}add_cart.svg';
 }

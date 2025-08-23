@@ -11,5 +11,17 @@
   "thirdOff": "30% OFF",
   "advertisement1": "For all Headphones\n& AirPods",
   "advertisement2": "For all Makeup\n& Skincare",
-  "advertisement3": "For Laptops\n& Mobiles"
+  "advertisement3": "For Laptops\n& Mobiles",
+  "cart": "Cart",
+  "totalPrice": "Total Price",
+  "checkout": "Check Out",
+  "addToCart": "Add to Cart",
+  "egp": "EGP",
+  "color": "color",
+  "productDetails": "Product Details",
+  "description": "Description",
+  "readLess": "Read Less",
+  "readMore": "Read More",
+  "size": "Size"
+
 }

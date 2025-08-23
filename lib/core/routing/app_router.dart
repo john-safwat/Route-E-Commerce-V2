@@ -2,6 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:route_e_commerce_v2/core/routing/routes.dart';
 import 'package:route_e_commerce_v2/features/navigation_layout/navigation_view.dart';
+import 'package:route_e_commerce_v2/product_details/product_details.dart';
 
 abstract class AppRouter {
   static Route generateRoute(RouteSettings settings) {
@@ -17,6 +18,12 @@ abstract class AppRouter {
           settings: settings,
           builder: (_) => const NavigationView(),
         );
+      case Routes.productDetailsRoute:
+        return MaterialPageRoute(
+          settings: settings,
+          builder: (_) => const ProductDetailsScreen(),
+        );
+
       default:
         return MaterialPageRoute(
           settings: settings,
