@@ -12,6 +12,36 @@ class AppLocalizationsEn extends AppLocalizations {
   String get appName => 'Route';
 
   @override
+  String get welcomeBackToRoute => 'Welcome back to Route';
+
+  @override
+  String get pleaseSignInWithYourMail => 'Please sign in with your mail';
+
+  @override
+  String get mail => 'Mail';
+
+  @override
+  String get password => 'Password';
+
+  @override
+  String get signIn => 'Sign in';
+
+  @override
+  String get dontHaveAnAccount => 'Don\'t have an account?';
+
+  @override
+  String get createAccount => 'Create account';
+
+  @override
+  String get forgetPassword => 'Forget password';
+
+  @override
+  String get enterYourMail => 'Enter your mail';
+
+  @override
+  String get enterYourPassword => 'Enter your password';
+
+  @override
   String get searchHintText => 'what do you search for?';
 
   @override

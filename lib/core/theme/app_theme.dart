@@ -8,17 +8,23 @@ class AppTheme {
       colorScheme: colorScheme,
       splashColor: Colors.transparent,
 
+
       textTheme: TextTheme(
         headlineSmall: GoogleFonts.poppins(
           fontSize: 12,
           fontWeight: FontWeight.w400,
           color: colorScheme.secondary,
         ),
+        bodyMedium:GoogleFonts.poppins(
+          fontSize: 16,
+          color: colorScheme.onPrimary,
+        ),
         headlineMedium: GoogleFonts.poppins(
           fontSize: 18,
           fontWeight: FontWeight.w500,
           color: colorScheme.secondary,
         ),
+
         labelSmall: GoogleFonts.poppins(
           fontSize: 14,
           fontWeight: FontWeight.w400,
@@ -39,7 +45,14 @@ class AppTheme {
           fontWeight: FontWeight.w400,
           color: colorScheme.secondary,
         ),
+        titleLarge: GoogleFonts.poppins(
+          fontSize: 18,
+
+          color: colorScheme.onPrimary,
+        )
       ),
+
+
 
       textSelectionTheme: TextSelectionThemeData(
         cursorColor: colorScheme.primary,
@@ -79,6 +92,7 @@ class AppTheme {
         ),
       ),
 
+
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ButtonStyle(
           backgroundColor: WidgetStateProperty.all(colorScheme.primary),
@@ -107,6 +121,7 @@ class AppTheme {
         surface: AppColors.white,
         onSurface: AppColors.blue,
       ),
+
     );
   }
 }

@@ -12,6 +12,37 @@ class AppLocalizationsAr extends AppLocalizations {
   String get appName => 'رووت';
 
   @override
+  String get welcomeBackToRoute => 'اهلا بكم في رووت';
+
+  @override
+  String get pleaseSignInWithYourMail =>
+      'يرجى تسجيل الدخول باستخدام بريدك الالكتروني';
+
+  @override
+  String get mail => 'البريد الالكتروني';
+
+  @override
+  String get password => 'كلمة المرور';
+
+  @override
+  String get signIn => 'تسجيل الدخول';
+
+  @override
+  String get dontHaveAnAccount => 'لا يوجد لديك حساب';
+
+  @override
+  String get createAccount => 'انشاء حساب';
+
+  @override
+  String get forgetPassword => 'نسيت كلمة المرور';
+
+  @override
+  String get enterYourMail => 'ادخل بريدك الالكتروني';
+
+  @override
+  String get enterYourPassword => 'ادخل كلمة المرور';
+
+  @override
   String get searchHintText => 'ماذا تبحث عنه؟';
 
   @override
