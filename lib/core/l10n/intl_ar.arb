@@ -11,5 +11,11 @@
   "thirdOff" : "خصم 30%",
   "advertisement1" : "لكل سماعات الرأس\nو AirPods",
   "advertisement2" : "لكل مستحضرات التجميل\nوالعناية بالبشرة",
-  "advertisement3" : "للحواسيب المحمولة\nوالهواتف المحمولة"
+  "advertisement3" : "للحواسيب المحمولة\nوالهواتف المحمولة",
+  "cart": "السلة",
+  "totalPrice": "السعر النهائي",
+  "checkout": "الدفع",
+  "addToCart": "اضف الي السلة",
+  "egp": "جنيه",
+  "color": "لون"
 }

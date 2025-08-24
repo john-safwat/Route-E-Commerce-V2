@@ -26,6 +26,17 @@ class CategoryDto {
     updatedAt = json['updatedAt'];
   }
 
+  Map<String, dynamic> toJson() {
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['_id'] = id;
+    data['name'] = name;
+    data['slug'] = slug;
+    data['image'] = image;
+    data['createdAt'] = createdAt;
+    data['updatedAt'] = updatedAt;
+    return data;
+  }
+
   Category toEntity() {
     return Category(
       id: id,

@@ -15,4 +15,10 @@ abstract class AppSvgs {
       '${_basePath}active_favorite_icon.svg';
   static const String inactiveFavoriteIcon =
       '${_basePath}inactive_favorite_icon.svg';
+  static const String arrowForward = '${_basePath}arrow_forward.svg';
+}
+
+abstract class NetworkImages {
+  static const String noImageAvailable =
+      'https://www.mountainmotorvehicles.co.uk/wp-content/uploads/2024/05/No-image-available-2.jpg';
 }

@@ -26,6 +26,17 @@ class SubCategoryDto {
     updatedAt = json['updatedAt'];
   }
 
+  Map<String, dynamic> toJson() {
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['_id'] = id;
+    data['name'] = name;
+    data['slug'] = slug;
+    data['category'] = category;
+    data['createdAt'] = createdAt;
+    data['updatedAt'] = updatedAt;
+    return data;
+  }
+
   SubCategory toEntity() {
     return SubCategory(
       id: id,
