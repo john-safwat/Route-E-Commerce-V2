@@ -77,6 +77,7 @@ class WishlistProductWidget extends StatelessWidget {
                   Text(
                     '${product?.availableColors?[colorIndex] ?? ''} ${locale.color}',
                     style: textTheme.bodySmall?.copyWith(
+                      fontSize: 12,
                       color: colorScheme.secondary.withValues(alpha: .6),
                     ),
                   ),
@@ -84,7 +85,7 @@ class WishlistProductWidget extends StatelessWidget {
                     children: [
                       Text(
                         '${locale.egp} ${product?.priceAfterDiscount ?? 0}',
-                        style: textTheme.headlineMedium,
+                        style: textTheme.headlineMedium?.copyWith(fontSize: 16),
                       ),
                       const SizedBox(width: 4),
                       Expanded(
@@ -117,7 +118,7 @@ class WishlistProductWidget extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(right: 12),
+                padding: const EdgeInsets.only(right: 12, bottom: 4),
                 child: SizedBox(
                   child: FilledButton(
                     onPressed: () {},
