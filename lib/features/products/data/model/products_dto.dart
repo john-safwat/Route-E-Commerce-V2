@@ -76,6 +76,36 @@ class ProductsDto {
     availableColors = json['availableColors']?.cast<String>();
   }
 
+  Map<String, dynamic> toJson() {
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['sold'] = sold;
+    data['images'] = images;
+    if (subcategory != null) {
+      data['subcategory'] = subcategory!.map((v) => v.toJson()).toList();
+    }
+    data['ratingsQuantity'] = ratingsQuantity;
+    data['_id'] = sId;
+    data['title'] = title;
+    data['slug'] = slug;
+    data['description'] = description;
+    data['quantity'] = quantity;
+    data['price'] = price;
+    data['imageCover'] = imageCover;
+    if (category != null) {
+      data['category'] = category!.toJson();
+    }
+    if (brand != null) {
+      data['brand'] = brand!.toJson();
+    }
+    data['ratingsAverage'] = ratingsAverage;
+    data['createdAt'] = createdAt;
+    data['updatedAt'] = updatedAt;
+    data['id'] = id;
+    data['priceAfterDiscount'] = priceAfterDiscount;
+    data['availableColors'] = availableColors;
+    return data;
+  }
+
   Product toEntity() {
     return Product(
       id: id,

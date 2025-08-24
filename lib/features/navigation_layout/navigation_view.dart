@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:icons_plus/icons_plus.dart';
 import 'package:route_e_commerce_v2/core/theme/app_colors.dart';
 import 'package:route_e_commerce_v2/features/navigation_layout/tabs/categories/presentation/categories_tab_view.dart';
-import 'package:route_e_commerce_v2/features/navigation_layout/tabs/favorite/favorite_tab_view.dart';
+import 'package:route_e_commerce_v2/features/navigation_layout/tabs/favorite/presentation/screen/favorite_tab_view.dart';
 import 'package:route_e_commerce_v2/features/navigation_layout/tabs/home/presentation/home_tab_view.dart';
 import 'package:route_e_commerce_v2/features/navigation_layout/tabs/profile/profile_tab_view.dart';
 import 'package:route_e_commerce_v2/features/navigation_layout/widgets/home_appbar.dart';

@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:route_e_commerce_v2/core/routing/routes.dart';
+import 'package:route_e_commerce_v2/features/cart/presentation/screen/cart_screen.dart';
 import 'package:route_e_commerce_v2/features/navigation_layout/navigation_view.dart';
 
 abstract class AppRouter {
@@ -17,6 +18,12 @@ abstract class AppRouter {
           settings: settings,
           builder: (_) => const NavigationView(),
         );
+      case Routes.cartRoute:
+        return MaterialPageRoute(
+          settings: settings,
+          builder: (_) => const CartScreen(),
+        );
+
       default:
         return MaterialPageRoute(
           settings: settings,
