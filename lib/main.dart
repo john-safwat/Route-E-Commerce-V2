@@ -23,10 +23,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
-      locale: const Locale("en"),
+      locale: const Locale("ar"),
       theme: AppTheme.getLightThemeData(),
       onGenerateRoute: AppRouter.generateRoute,
-      initialRoute: Routes.navigationRoute,
+      initialRoute: Routes.loginRoute,
     );
   }
 }

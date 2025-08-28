@@ -5,6 +5,7 @@ import 'package:route_e_commerce_v2/features/navigation_layout/tabs/categories/d
 
 class CategoryWidget extends StatelessWidget {
   final Category category;
+
   const CategoryWidget({super.key, required this.category});
 
   @override

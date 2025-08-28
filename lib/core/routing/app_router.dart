@@ -3,6 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:route_e_commerce_v2/core/routing/routes.dart';
 import 'package:route_e_commerce_v2/features/navigation_layout/navigation_view.dart';
 
+import '../../features/auth/view/login/login.dart';
+import '../../features/auth/view/registration/registration.dart';
+
 abstract class AppRouter {
   static Route generateRoute(RouteSettings settings) {
     if (kDebugMode) {
@@ -16,6 +19,16 @@ abstract class AppRouter {
         return MaterialPageRoute(
           settings: settings,
           builder: (_) => const NavigationView(),
+        );
+      case Routes.loginRoute:
+        return MaterialPageRoute(
+          settings: settings,
+          builder: (_) => const Login(),
+        );
+      case Routes.registrationRoute:
+        return MaterialPageRoute(
+          settings: settings,
+          builder: (_) => const Registration(),
         );
       default:
         return MaterialPageRoute(

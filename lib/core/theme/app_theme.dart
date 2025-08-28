@@ -14,11 +14,16 @@ class AppTheme {
           fontWeight: FontWeight.w400,
           color: colorScheme.secondary,
         ),
+        bodyMedium: GoogleFonts.poppins(
+          fontSize: 16,
+          color: colorScheme.onPrimary,
+        ),
         headlineMedium: GoogleFonts.poppins(
           fontSize: 18,
           fontWeight: FontWeight.w500,
           color: colorScheme.secondary,
         ),
+
         labelSmall: GoogleFonts.poppins(
           fontSize: 14,
           fontWeight: FontWeight.w400,
@@ -38,6 +43,11 @@ class AppTheme {
           fontSize: 14,
           fontWeight: FontWeight.w400,
           color: colorScheme.secondary,
+        ),
+        titleLarge: GoogleFonts.poppins(
+          fontSize: 18,
+
+          color: colorScheme.onPrimary,
         ),
       ),
 

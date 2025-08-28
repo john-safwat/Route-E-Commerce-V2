@@ -12,6 +12,79 @@ class AppLocalizationsEn extends AppLocalizations {
   String get appName => 'Route';
 
   @override
+  String get welcomeBackToRoute => 'Welcome Back To Route';
+
+  @override
+  String get pleaseSignInWithYourMail => 'Please sign in with your mail';
+
+  @override
+  String get userName => 'User Name';
+
+  @override
+  String get password => 'Password';
+
+  @override
+  String get fullName => 'Full Name';
+
+  @override
+  String get enterYourFullName => 'Enter your full name';
+
+  @override
+  String get mobileNumber => 'Mobile Number';
+
+  @override
+  String get enterYourMobileNumber => 'Enter your mobile number';
+
+  @override
+  String get email => 'E-mail address';
+
+  @override
+  String get enterYourEmail => 'Enter your e-mail address';
+
+  @override
+  String get signUp => 'Sign Up';
+
+  @override
+  String get login => 'Login';
+
+  @override
+  String get dontHaveAnAccount => 'Don\'t have an account?';
+
+  @override
+  String get createAccount => 'Create Account';
+
+  @override
+  String get forgetPassword => 'Forget password';
+
+  @override
+  String get enterYourName => 'Enter your name';
+
+  @override
+  String get emailRequired => 'Email is required';
+
+  @override
+  String get emailInvalid => 'Please enter a valid email address';
+
+  @override
+  String get passwordRequired => 'Password is required';
+
+  @override
+  String get passwordTooShort => 'Password must be at least 6 characters long';
+
+  @override
+  String get passwordUppercase =>
+      'Password must contain at least one uppercase letter';
+
+  @override
+  String get passwordNumber => 'Password must contain at least one number';
+
+  @override
+  String get fieldRequired => 'This field is required';
+
+  @override
+  String get enterYourPassword => 'Enter your password';
+
+  @override
   String get searchHintText => 'what do you search for?';
 
   @override
