@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:route_e_commerce_v2/core/utils/dummy_data_provider.dart';
 import 'package:route_e_commerce_v2/features/navigation_layout/tabs/categories/domain/entities/category.dart';
-
 import 'category_widget.dart';
 
 class CategoriesList extends StatelessWidget {
@@ -12,7 +11,7 @@ class CategoriesList extends StatelessWidget {
     final List<Category> categories = DummyDataProvider.generateCategories();
     return SliverToBoxAdapter(
       child: SizedBox(
-        height: MediaQuery.of(context).size.height * 0.28,
+        height: 260,
         child: GridView.builder(
           padding: const EdgeInsets.symmetric(horizontal: 16),
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(

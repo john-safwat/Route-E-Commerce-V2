@@ -122,4 +122,40 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get advertisement3 => 'على أجهزة اللابتوب\nو الهواتف';
+
+  @override
+  String get searchHintText => 'ماذا تبحث عنه؟';
+
+  @override
+  String get categories => 'الفئات';
+
+  @override
+  String get viewAll => 'عرض الكل';
+
+  @override
+  String get homeAppliance => 'الأجهزة المنزلية';
+
+  @override
+  String get shopNow => 'تسوق الآن';
+
+  @override
+  String get upTo => 'حتى';
+
+  @override
+  String get fistOff => 'خصم 20%';
+
+  @override
+  String get secondOff => 'خصم 25%';
+
+  @override
+  String get thirdOff => 'خصم 30%';
+
+  @override
+  String get advertisement1 => 'لكل سماعات الرأس\nو AirPods';
+
+  @override
+  String get advertisement2 => 'لكل مستحضرات التجميل\nوالعناية بالبشرة';
+
+  @override
+  String get advertisement3 => 'للحواسيب المحمولة\nوالهواتف المحمولة';
 }
