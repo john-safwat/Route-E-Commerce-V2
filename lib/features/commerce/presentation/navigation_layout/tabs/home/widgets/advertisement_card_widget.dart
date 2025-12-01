@@ -2,7 +2,7 @@ import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:route_e_commerce_v2/core/l10n/translations/app_localizations.dart';
 import 'package:route_e_commerce_v2/core/theme/app_colors.dart';
-import 'package:route_e_commerce_v2/features/navigation_layout/tabs/home/presentation/model/advertisement_model.dart';
+import 'package:route_e_commerce_v2/features/commerce/presentation/model/advertisement_model.dart';
 
 class AdvertisementCardWidget extends StatelessWidget {
   final int index;

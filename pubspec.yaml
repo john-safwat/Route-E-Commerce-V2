@@ -30,7 +30,8 @@ dependencies:
   cherry_toast: ^1.13.0
   get_it:
   injectable:
-  shared_preferences: 
+  shared_preferences:
+  shimmer: ^3.0.0
 
 dev_dependencies:
   flutter_test:

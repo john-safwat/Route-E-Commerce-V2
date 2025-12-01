@@ -1,7 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:route_e_commerce_v2/core/utils/app_assets.dart';
-import 'package:route_e_commerce_v2/features/navigation_layout/tabs/categories/domain/entities/category.dart';
+import 'package:route_e_commerce_v2/features/commerce/domain/entities/category.dart';
 
 class CategoryWidget extends StatelessWidget {
   final Category category;
@@ -16,13 +16,15 @@ class CategoryWidget extends StatelessWidget {
       child: Column(
         spacing: 8,
         children: [
-          ClipRRect(
-            borderRadius: BorderRadius.circular(1000),
-            child: AspectRatio(
-              aspectRatio: 1,
-              child: CachedNetworkImage(
-                imageUrl: category.image ?? AppImages.advertisement1,
-                fit: BoxFit.fill,
+          Expanded(
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(1000),
+              child: AspectRatio(
+                aspectRatio: 1,
+                child: CachedNetworkImage(
+                  imageUrl: category.image ?? AppImages.advertisement1,
+                  fit: BoxFit.fill,
+                ),
               ),
             ),
           ),
