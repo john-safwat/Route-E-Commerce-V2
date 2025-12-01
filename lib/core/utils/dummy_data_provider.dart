@@ -1,4 +1,5 @@
-import 'package:route_e_commerce_v2/features/navigation_layout/tabs/categories/domain/entities/category.dart';
+
+import 'package:route_e_commerce_v2/features/commerce/domain/entities/category.dart';
 import 'package:route_e_commerce_v2/features/products/domain/entity/product.dart';
 
 abstract class DummyDataProvider {
