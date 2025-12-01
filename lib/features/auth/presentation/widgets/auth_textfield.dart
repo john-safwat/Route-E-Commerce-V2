@@ -23,8 +23,8 @@ class AuthTextField extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
 
-        Text(title,style: Theme.of(context).textTheme.headlineSmall!.copyWith(color: AppColors.white,fontSize: 18),),
-        const SizedBox(height: 24,),
+        Text(title,style: Theme.of(context).textTheme.bodyLarge!.copyWith(color: AppColors.white),),
+        const SizedBox(height: 8,),
         TextFormField(
           controller: controller,
           validator:validator ,
